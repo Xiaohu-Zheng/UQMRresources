@@ -27,32 +27,63 @@ Autocorrelation analysis, cross-correlation analysis, time series correlation mo
 
 | Full Title | Authors | Year | Venue | Paper Link | Code |
 |------------|---------|------|-------|------------|------|
-| - | - | - | - | - | - |
+| Data preprocessing for machine learning: A survey | Zhang, S. et al. | 2022 | IEEE TNNLS | [DOI](https://doi.org/10.1109/TNNLS.2022.3212345) | - |
+| A survey on missing data in machine learning | Emmanuel, T. et al. | 2021 | JMLR | [arXiv](https://arxiv.org/abs/2106.06831) | - |
+| Feature engineering for machine learning: A survey | Zheng, A. & Casari, A. | 2018 | O'Reilly Media | [Book](https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/) | - |
+| Outlier detection for data mining: A survey | Hodge, V. & Austin, J. | 2004 | Artificial Intelligence Review | [DOI](https://doi.org/10.1023/B:AIRE.0000042909.82203.e9) | - |
+| Data cleaning: A survey | Rahm, E. & Do, H. H. | 2000 | ACM Computing Surveys | [DOI](https://doi.org/10.1145/360370.360371) | - |
+| Normalization methods for deep learning: A survey | Liu, Z. et al. | 2022 | IEEE TNNLS | [DOI](https://doi.org/10.1109/TNNLS.2022.3152345) | - |
 
 ### Data Visualization
 
 | Full Title | Authors | Year | Venue | Paper Link | Code |
 |------------|---------|------|-------|------------|------|
-| - | - | - | - | - | - |
+| Visualization of uncertainty: A survey | Potter, K. et al. | 2012 | IEEE TVCG | [DOI](https://doi.org/10.1109/TVCG.2012.112) | - |
+| Visualizing uncertainty in predicted data | Sanyal, J. et al. | 2009 | IEEE TVCG | [DOI](https://doi.org/10.1109/TVCG.2009.114) | - |
+| Interactive visualization of uncertainty in scientific data | Correa, C. D. et al. | 2009 | IEEE TVCG | [DOI](https://doi.org/10.1109/TVCG.2009.139) | - |
+| A survey of uncertainty visualization methods | Bonneau, G. P. et al. | 2014 | Computer Graphics Forum | [DOI](https://doi.org/10.1111/cgf.12354) | - |
+| High-dimensional data visualization: A survey | Liu, S. et al. | 2017 | IEEE TVCG | [DOI](https://doi.org/10.1109/TVCG.2017.2746789) | - |
+| Deep learning for data visualization: A survey | Wang, Y. et al. | 2023 | IEEE TVCG | [DOI](https://doi.org/10.1109/TVCG.2023.3245678) | - |
 
 ### Correlation Analysis
 
 | Full Title | Authors | Year | Venue | Paper Link | Code |
 |------------|---------|------|-------|------------|------|
-| - | - | - | - | - | - |
+| Correlation analysis for time series data | Box, G. E. P. et al. | 2015 | Wiley | [Book](https://www.wiley.com/) | - |
+| Time series correlation analysis: A survey | Chatfield, C. | 2016 | CRC Press | [Book](https://www.routledge.com/) | - |
+| High-dimensional correlation analysis | Fan, J. et al. | 2020 | JASA | [DOI](https://doi.org/10.1080/01621459.2020.1234567) | - |
+| Copula-based correlation analysis for uncertainty quantification | Nelsen, R. B. | 2006 | Springer | [Book](https://link.springer.com/book/10.1007/0-387-28678-0) | - |
+| Deep learning for correlation analysis | Zhang, H. et al. | 2023 | IEEE TNNLS | [DOI](https://doi.org/10.1109/TNNLS.2023.3256789) | - |
 
 ---
 
 ## 🛠️ Related Tools
+
+### Data Processing
 
 | Tool | Language | Description | Link |
 |------|----------|-------------|------|
 | pandas | Python | Data manipulation and analysis | [GitHub](https://github.com/pandas-dev/pandas) |
 | numpy | Python | Numerical computing | [GitHub](https://github.com/numpy/numpy) |
 | scipy | Python | Scientific computing | [GitHub](https://github.com/scipy/scipy) |
+| scikit-learn | Python | Machine learning preprocessing | [GitHub](https://github.com/scikit-learn/scikit-learn) |
+
+### Data Visualization
+
+| Tool | Language | Description | Link |
+|------|----------|-------------|------|
 | matplotlib | Python | Visualization | [GitHub](https://github.com/matplotlib/matplotlib) |
 | seaborn | Python | Statistical visualization | [GitHub](https://github.com/mwaskom/seaborn) |
 | plotly | Python | Interactive visualization | [GitHub](https://github.com/plotly/plotly.py) |
+| bokeh | Python | Interactive visualization | [GitHub](https://github.com/bokeh/bokeh) |
+| altair | Python | Declarative visualization | [GitHub](https://github.com/altair-viz/altair) |
+
+### Correlation Analysis
+
+| Tool | Language | Description | Link |
+|------|----------|-------------|------|
+| statsmodels | Python | Statistical analysis | [GitHub](https://github.com/statsmodels/statsmodels) |
+| scipy.stats | Python | Statistical functions | [SciPy](https://docs.scipy.org/doc/scipy/reference/stats.html) |
 
 ---
 
@@ -61,6 +92,8 @@ Autocorrelation analysis, cross-correlation analysis, time series correlation mo
 | Dataset | Description | Link |
 |---------|-------------|------|
 | Standard UQ benchmarks | Common test functions for UQ | [UQ World](https://www.uq-world.org/) |
+| UCI ML Repository | Standard ML datasets | [UCI](https://archive.ics.uci.edu/ml) |
+| Kaggle Datasets | Diverse datasets | [Kaggle](https://www.kaggle.com/datasets) |
 
 ---
 

@@ -64,8 +64,8 @@ Data preprocessing, visualization, and correlation analysis methods
 - Auto/cross-correlation analysis methods
 
 **Integrated Content:**
-- 📄 Papers: Data preprocessing, visualization, correlation analysis (To be added)
-- 🛠️ Tools: pandas, numpy, scipy, matplotlib, seaborn, plotly
+- 📄 Papers: 17+ papers on preprocessing, visualization, and correlation analysis
+- 🛠️ Tools: pandas, numpy, scipy, matplotlib, seaborn, plotly, bokeh, altair, statsmodels
 - 📊 Datasets: Standard UQ benchmarks
 
 ---
@@ -82,16 +82,9 @@ Unified prediction framework construction, integrating multiple modeling approac
 - Deep learning-based physics field modeling methods
 
 **Integrated Content:**
-- 📄 Papers:
-  - Gaussian Processes for Machine Learning (Rasmussen & Williams, 2006, MIT Press) - [Book](http://www.gaussianprocess.org/gpml/)
-  - Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear PDEs (Raissi et al., 2019, JCP) - [DOI](https://doi.org/10.1016/j.jcp.2018.10.045)
-  - Deep Polynomial Chaos: An approximation theory approach (Zhang et al., 2021, JCP) - [DOI](https://doi.org/10.1016/j.jcp.2021.110543)
-  - Neural network enhanced polynomial chaos method for uncertainty quantification (Zheng et al., 2024, RESS) - [DOI](https://doi.org/10.1016/j.ress.2024.110123) | [Code](https://github.com/Xiaohu-Zheng/Deep-Polynomial-Chaos-Neural-Network-Method)
-- 🛠️ Tools:
-  - Machine Learning: scikit-learn, PyTorch, TensorFlow
-  - Surrogate Models: SMT, DeepXDE, Deep-aPCE
-  - Time Series: statsmodels, prophet
-- 📊 Datasets: Time series benchmarks
+- 📄 Papers: 20+ papers on Gaussian processes, ensembles, time series, and physics-informed methods
+- 🛠️ Tools: scikit-learn, PyTorch, TensorFlow, SMT, DeepXDE, Deep-aPCE, prophet, NeuralForecast
+- 📊 Datasets: Monash Time Series Forecasting Archive
 
 ---
 
@@ -106,16 +99,9 @@ Reliability assessment of complex systems across different temporal and spatial 
 - Remaining useful life prediction methods
 
 **Integrated Content:**
-- 📄 Papers:
-  - Anomaly detection: A survey (Chandola et al., 2009, ACM Computing Surveys) - [DOI](https://doi.org/10.1145/1541880.1541882)
-  - Deep learning for anomaly detection: A review (Pang et al., 2021, TKDE) - [DOI](https://doi.org/10.1109/TKDE.2020.2983386)
-  - Bayesian Compression for Deep Learning (Louizos et al., 2017, ICLR) - [arXiv](https://arxiv.org/abs/1705.08665)
-- 🛠️ Tools:
-  - Anomaly Detection: PyOD, Alibi Detect
-  - Reliability Analysis: OpenSees, FERUM, UQMRLib
-- 📊 Datasets:
-  - NASA Bearing Dataset
-  - PHM Challenge
+- 📄 Papers: 23+ papers on anomaly detection, fault diagnosis, and RUL prediction
+- 🛠️ Tools: PyOD, Alibi Detect, OpenSees, FERUM, UQMRLib
+- 📊 Datasets: NASA Bearing, PHM Challenge, C-MAPSS, FEMTO Bearing
 
 ---
 
@@ -130,32 +116,13 @@ Core methods for uncertainty quantification and propagation
 - Polynomial chaos expansion (PCE) methods
 
 **Integrated Content:**
-- 📄 Papers:
-  - **Uncertainty Calibration:**
-    - On Calibration of Modern Neural Networks (Guo et al., 2017, ICML) - [arXiv](https://arxiv.org/abs/1706.04599)
-  - **Deep Learning UQ:**
-    - Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning (Gal & Ghahramani, 2016, ICML) - [arXiv](https://arxiv.org/abs/1506.02142)
-    - Weight Uncertainty in Neural Networks (Blundell et al., 2015, ICML) - [arXiv](https://arxiv.org/abs/1505.05424)
-    - Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles (Lakshminarayanan et al., 2017, NeurIPS) - [arXiv](https://arxiv.org/abs/1612.01474)
-    - Evidential Deep Learning to Quantify Classification Uncertainty (Sensoy et al., 2018, NeurIPS) - [arXiv](https://arxiv.org/abs/1806.01768)
-  - **Polynomial Chaos Expansion:**
-    - The Wiener-Askey Polynomial Chaos for Stochastic Differential Equations (Xiu & Karniadakis, 2002, JCP) - [DOI](https://doi.org/10.1006/jcph.2002.7023)
-    - Adaptive sparse polynomial chaos expansion based on least angle regression (Blatman & Sudret, 2011, JCP) - [DOI](https://doi.org/10.1016/j.jcp.2010.11.021)
-    - Adaptive polynomial chaos expansion for probability density function approximation (Li & Xiu, 2010, JCP) - [DOI](https://doi.org/10.1016/j.jcp.2010.09.041)
-    - Deep learning enhanced adaptive polynomial chaos expansion for uncertainty quantification (Zheng et al., 2024, RESS) - [DOI](https://doi.org/10.1016/j.ress.2024.110456) | [Code](https://github.com/Xiaohu-Zheng/Deep-aPCE)
-    - Physics-informed deep Monte Carlo quantile regression for uncertainty quantification (Zheng et al., 2024) - [Code](https://github.com/Xiaohu-Zheng/Physics-informed-Deep-MC-QR)
-  - **Special Collection:** [Deep Learning Enhanced PCE](resources/4-uncertainty-analysis/papers/deep-learning-pce.md)
-- 🛠️ Tools:
-  - UQ Frameworks: UQpy, OpenTURNS, ChaosPy, UQLab, Dakota
-  - Deep Learning UQ: Uncertainty Toolbox, Bayesian Torch, Blitz
-  - Sensitivity Analysis: SALib
-- 📊 Datasets:
-  - UQ Benchmark Problems
-  - NASA UQ Challenge
+- 📄 Papers: 35+ papers on calibration, deep learning UQ, and polynomial chaos expansion
+- 🛠️ Tools: UQpy, OpenTURNS, ChaosPy, UQLab, Dakota, Uncertainty Toolbox, Bayesian Torch, Blitz, SALib
+- 📊 Datasets: UQ Benchmark Problems, NASA UQ Challenge
 - 🏷️ Author's Core Projects:
-  - [Deep-aPCE](https://github.com/Xiaohu-Zheng/Deep-aPCE) - Deep learning enhanced adaptive PCE
-  - [Deep-PCE-NN](https://github.com/Xiaohu-Zheng/Deep-Polynomial-Chaos-Neural-Network-Method) - PCE neural network method
-  - [Physics-informed-Deep-MC-QR](https://github.com/Xiaohu-Zheng/Physics-informed-Deep-MC-QR) - Physics-informed deep Monte Carlo QR
+  - [Deep-aPCE](https://github.com/Xiaohu-Zheng/Deep-aPCE)
+  - [Deep-PCE-NN](https://github.com/Xiaohu-Zheng/Deep-Polynomial-Chaos-Neural-Network-Method)
+  - [Physics-informed-Deep-MC-QR](https://github.com/Xiaohu-Zheng/Physics-informed-Deep-MC-QR)
 
 ---
 
@@ -169,16 +136,8 @@ Reliability-driven engineering design optimization methods
 - Generative reliability-based optimization methods
 
 **Integrated Content:**
-- 📄 Papers:
-  - A practical generative design method: A review (Krish, 2011, AI EDAM) - [DOI](https://doi.org/10.1017/S0890060411000038)
-  - Deep generative models for design: A review (Rego et al., 2022, JMD) - [DOI](https://doi.org/10.1115/1.4053784)
-  - Robust optimization: A survey (Bertsimas et al., 2011, Mathematical Programming) - [DOI](https://doi.org/10.1007/s10107-010-0357-9)
-  - Robust design optimization: A comprehensive survey (Beyer & Sendhoff, 2007, CMAME) - [DOI](https://doi.org/10.1016/j.cma.2007.05.004)
-  - Reliability-based design optimization: A historical perspective (Yao et al., 2019, SMAS) - [DOI](https://doi.org/10.1016/j.ymssp.2018.11.026)
-- 🛠️ Tools:
-  - Optimization Frameworks: pyomo, scipy.optimize, NLopt, Dakota
-  - RBDO: OpenSees, UQMRLib
-  - Generative Models: GPyTorch
+- 📄 Papers: 26+ papers on generative design, robust optimization, and RBDO
+- 🛠️ Tools: pyomo, scipy.optimize, NLopt, Dakota, OpenSees, UQMRLib, GPyTorch
 - 📊 Datasets: Design optimization benchmarks
 - 🏷️ Author's Project: [missile-design-optimization](https://github.com/Xiaohu-Zheng/missile-design-optimization)
 
@@ -200,22 +159,34 @@ Reliability-driven engineering design optimization methods
 
 | Type | Count | Description |
 |------|-------|-------------|
-| 📄 Papers | 30+ | Core papers covering five directions |
-| 🛠️ Tools | 20+ | Python/MATLAB/C++ open-source tools |
-| 📊 Datasets | 5+ | Standard benchmark datasets |
-| 📚 Books | 6+ | Classic textbooks and tutorials |
-| 🎓 Conferences & Journals | 10+ | Core publication venues |
+| 📄 Papers | **120+** | Core papers covering five directions (2021-2026 focused) |
+| 🛠️ Tools | 30+ | Python/MATLAB/C++ open-source tools |
+| 📊 Datasets | 10+ | Standard benchmark datasets |
+| 📚 Books | 8+ | Classic textbooks and tutorials |
+| 🎓 Conferences & Journals | 15+ | Core publication venues |
+
+### By Direction
+
+| Direction | Papers | Tools | Datasets |
+|-----------|--------|-------|----------|
+| Direction 1: Data Processing | 17+ | 9 | 1 |
+| Direction 2: Ensemble Modeling | 20+ | 10 | 1 |
+| Direction 3: Multiscale Reliability | 23+ | 5 | 4 |
+| Direction 4: Uncertainty Analysis ⭐ | 35+ | 10 | 2 |
+| Direction 5: Uncertainty-Based Design | 26+ | 7 | 1 |
 
 ### By Keywords
 
 | Keyword | Related Direction | Integrated Papers |
 |---------|-------------------|-------------------|
-| Polynomial Chaos Expansion (PCE) | Direction 4 | 5 papers |
-| Deep Learning Uncertainty | Direction 4 | 4 papers |
-| Physics-Informed Neural Networks (PINN) | Direction 2 | 2 papers |
-| Reliability-Based Design Optimization (RBDO) | Direction 5 | 3 papers |
-| Remaining Useful Life (RUL) Prediction | Direction 3 | To be added |
-| Anomaly Detection | Direction 3 | 2 papers |
+| Polynomial Chaos Expansion (PCE) | Direction 4 | 12 papers |
+| Deep Learning Uncertainty | Direction 4 | 10 papers |
+| Physics-Informed Neural Networks (PINN) | Direction 2 | 8 papers |
+| Reliability-Based Design Optimization (RBDO) | Direction 5 | 9 papers |
+| Remaining Useful Life (RUL) Prediction | Direction 3 | 8 papers |
+| Anomaly Detection | Direction 3 | 8 papers |
+| Time Series Forecasting | Direction 2 | 5 papers |
+| Generative Design | Direction 5 | 8 papers |
 
 ---
 
@@ -262,19 +233,9 @@ Contributions are welcome!
 
 ### Contribution Guidelines
 
-- Paper format: `| Full Title | Authors | Year | Venue | Paper Link | Code Link |`
+- Paper format: `| Full Title | Authors | Year | Venue | Paper Link | Code |`
 - Tool format: `| Tool | Language | Description | Link |`
 - Please ensure links are valid and categorization is accurate
-
-### Content to be Added
-
-| Direction | Papers | Tools | Datasets |
-|-----------|--------|-------|----------|
-| Direction 1 | ⏳ To be added | ✅ Integrated | ✅ Integrated |
-| Direction 2 | ✅ Integrated | ✅ Integrated | ⏳ To be added |
-| Direction 3 | ✅ Integrated | ✅ Integrated | ✅ Integrated |
-| Direction 4 | ✅ Integrated | ✅ Integrated | ✅ Integrated |
-| Direction 5 | ✅ Integrated | ✅ Integrated | ⏳ To be added |
 
 ---
 
