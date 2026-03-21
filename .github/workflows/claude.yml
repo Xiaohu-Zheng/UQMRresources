@@ -35,3 +35,52 @@ jobs:
         env:
           ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
           ANTHROPIC_MODEL: ${{ secrets.ANTHROPIC_MODEL }}
+
+      - name: Claude with Web Search
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          # 根据事件类型提取用户评论
+          if [ "${{ github.event_name }}" = "issue_comment" ]; then
+            USER_INPUT="${{ github.event.comment.body }}"
+          elif [ "${{ github.event_name }}" = "issues" ]; then
+            USER_INPUT="${{ github.event.issue.body }}"
+          elif [ "${{ github.event_name }}" = "pull_request_review_comment" ]; then
+            USER_INPUT="${{ github.event.comment.body }}"
+          else
+            USER_INPUT=""
+          fi
+          
+          # 移除 @claude 提及，只保留实际内容
+          USER_INPUT=$(echo "$USER_INPUT" | sed 's/@claude//g')
+          
+          # 调用 Anthropic API
+          RESPONSE=$(curl -s -X POST https://api.anthropic.com/v1/messages \
+            --header "x-api-key: $ANTHROPIC_API_KEY" \
+            --header "anthropic-version: 2023-06-01" \
+            --header "content-type: application/json" \
+            --data "$(jq -n \
+              --arg content "$USER_INPUT" \
+              '{
+                model: "deepseek-v3.2",
+                max_tokens: 4096,
+                messages: [{role: "user", content: $content}],
+                tools: [{
+                  type: "web_search_20250305",
+                  name: "web_search"
+                }]
+              }')")
+          
+          # 提取 Claude 的回复内容
+          CLAUDE_REPLY=$(echo "$RESPONSE" | jq -r '.content[0].text')
+          
+          # 将回复发布回 GitHub（根据事件类型选择评论位置）
+          if [ "${{ github.event_name }}" = "issue_comment" ]; then
+            # 回复到 Issue/PR 评论
+            gh issue comment "${{ github.event.issue.number }}" --body "$CLAUDE_REPLY"
+          elif [ "${{ github.event_name }}" = "pull_request_review_comment" ]; then
+            # 回复到 PR 审查评论
+            gh pr comment "${{ github.event.pull_request.number }}" --body "$CLAUDE_REPLY"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 用于发布评论
