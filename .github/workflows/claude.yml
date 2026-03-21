@@ -82,5 +82,3 @@ jobs:
             # 回复到 PR 审查评论
             gh pr comment "${{ github.event.pull_request.number }}" --body "$CLAUDE_REPLY"
           fi
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 用于发布评论
